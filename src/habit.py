@@ -16,9 +16,12 @@ class Habit:
         return False
     
     def streak_update(self,today):
-        if((today.day - self.history[len(self.history) - 1].day) == 1):
-            self.streak += 1
-        elif(today.day != self.history[len(self.history) - 1].day):
+        if(self.history != []):
+            if((today.day - self.history[len(self.history) - 1].day) == 1):
+                self.streak += 1
+            elif(today.day != self.history[len(self.history) - 1].day):
+                self.streak = 1
+        else:
             self.streak = 1
     
     def check_done(self):
@@ -50,13 +53,16 @@ class Habit:
     
     def summary(self):
         today = date.today()
-        if((today.day - self.history[len(self.history) - 1].day) == 1):
-            print(f"Streak: {self.streak} days is about to break...")
-        elif(today.day != self.history[len(self.history) - 1].day):
-            print("Your Streak just broke")
-            self.streak = 0
+        if(self.history != []):
+            if((today.day - self.history[len(self.history) - 1].day) == 1):
+                print(f"Streak of {self.streak} days is about to break...")
+            elif(today.day != self.history[len(self.history) - 1].day):
+                print("Streak just broke")
+                self.streak = 0
+            else:
+                print(f"Streak of {self.streak} days safe for today...")
         else:
-            print("you are safe for today...")
+            print("Streak Never Started...")
     
     def print_all(self):
         dict = self.to_dict()

@@ -12,6 +12,7 @@ class Reporter():
         print("Checking for current logs...")
         str_path = Storage.data_path()
         data = Storage.load_json(str_path)
+        Storage.load_Valid_habits(str_path)
         if data != {}:
             cls.u.load_user(data)
             print("Data loaded successfully...")

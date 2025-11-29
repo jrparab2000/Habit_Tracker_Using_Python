@@ -28,6 +28,20 @@
                 "2025-11-28"
             ],
             "streak": 1
+        },
+        "bed": {
+            "name": "jayesh",
+            "habit": "bed",
+            "history": [],
+            "streak": 0
+        },
+        "drink water": {
+            "name": "jayesh",
+            "habit": "drink water",
+            "history": [
+                "2025-11-29"
+            ],
+            "streak": 1
         }
     },
     "shrutikamat": {
@@ -54,7 +68,13 @@
                 "2025-11-26",
                 "2025-11-27"
             ],
-            "streak": 3
+            "streak": 0
+        },
+        "cycling": {
+            "name": "alex",
+            "habit": "cycling",
+            "history": [],
+            "streak": 0
         }
     }
 }
