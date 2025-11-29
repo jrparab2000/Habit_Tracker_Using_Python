@@ -37,7 +37,7 @@ Before running the program, you need to set up your environment.
 ### 1️⃣ Activate the Virtual Environment (Recommended)
 
 ```
-.irtual_env\myenv\Scripts\Activate
+.\virtual_env\myenv\Scripts\Activate
 ```
 
 ### 2️⃣ Install Required Dependencies (If Needed)
@@ -125,13 +125,14 @@ src/
 │   main.py
 │   user.py
 │   habit.py
-│   habit_matcher.py
-│   tracker.py
+│   habit_tracker.py
+│   reporter.py
 │   storage.py
 │   api_client.py
 data/
-│   habits.json
-│   habits_db.json
+│   data.json
+│   valid_habits.json
+virtual_env/
 ```
 
 ## 🙌 Thank You for Using Habit Tracker!
