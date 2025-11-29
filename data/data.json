@@ -1,0 +1,60 @@
+{
+    "jayeshparab": {
+        "name": "jayesh",
+        "brush": {
+            "name": "jayesh",
+            "habit": "brush",
+            "history": [
+                "2025-11-21",
+                "2025-11-23",
+                "2025-11-24",
+                "2025-11-25",
+                "2025-11-26",
+                "2025-11-27",
+                "2025-11-28"
+            ],
+            "streak": 7
+        },
+        "excercise": {
+            "name": "jayesh",
+            "habit": "excercise",
+            "history": [
+                "2025-11-18",
+                "2025-11-19",
+                "2025-11-20",
+                "2025-11-21",
+                "2025-11-22",
+                "2025-11-23",
+                "2025-11-28"
+            ],
+            "streak": 1
+        }
+    },
+    "shrutikamat": {
+        "name": "shruti",
+        "drink water": {
+            "name": "shruti",
+            "habit": "drink water",
+            "history": [
+                "2025-11-27"
+            ],
+            "streak": 1
+        }
+    },
+    "xyz": {
+        "name": "alex",
+        "study": {
+            "name": "alex",
+            "habit": "study",
+            "history": [
+                "2025-11-18",
+                "2025-11-19",
+                "2025-11-20",
+                "2025-11-25",
+                "2025-11-26",
+                "2025-11-27"
+            ],
+            "streak": 3
+        }
+    }
+}
