@@ -61,6 +61,11 @@ class Habit_Tracker:
             dict.update({keys : values.to_dict()})
         return dict
     
+    def summary(self):
+        for keys, values in self.habits.items():
+            print(f"Your Habit of {keys}:")
+            values.summary()
+
     def print_all(self):
         print(f"Name:\t{self.name}")
         for keys, values in self.habits.items():

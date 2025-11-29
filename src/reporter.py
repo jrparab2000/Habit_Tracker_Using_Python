@@ -70,9 +70,15 @@ class Reporter():
                 
     @classmethod
     def user_menu(cls,userId):
+        flag = True
         while True:
             print()
             print(f"---------------Welcome {cls.u.get_name(userId)}---------------")
+            if flag:
+                cls.summary(userId)
+                flag = False
+                print()
+            print("Motivation:-")
             print(str(APIClient.get_quote()))
             print("1.\tView Habits")
             print("2.\tAdd New Habit")
@@ -145,3 +151,8 @@ class Reporter():
         str_path = Storage.data_path()
         data = cls.u.store_user()
         Storage.save_json(str_path, data)
+
+    @classmethod
+    def summary(cls,userId):
+        print("Summary:-")
+        cls.u.summary(userId)

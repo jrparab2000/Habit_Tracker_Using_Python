@@ -9,14 +9,10 @@ class Storage:
     @staticmethod
     def data_path():
         cwd = os.getcwd()
-        # os.chdir("data")
-        # os.chdir("habit_tracker")
-        # print(os.getcwd())
         if not os.path.exists("data"):
             os.makedirs("data")
         os.chdir("data")
         new_cwd = os.getcwd()
-        # print(os.getcwd())
         os.chdir(cwd)
         return str(new_cwd)
     

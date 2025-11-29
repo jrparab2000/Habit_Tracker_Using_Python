@@ -59,7 +59,10 @@ class User:
         for keys in self.users.keys():
             print(f"{count}.\t{keys}")
             count += 1
-    
+
+    def summary(self,userId):
+        self.users[userId].summary()
+
     def print_all(self):
         for keys, values in self.users.items():
             print()
