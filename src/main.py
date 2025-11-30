@@ -1,6 +1,20 @@
 from reporter import Reporter
+"""
+Main Application Entry Point 🚀
+--------------------------------
+This module contains the main function to run the Habit Tracker command-line 
+application. 
 
+It handles:
+1. Instantiating the Reporter (UI) class.
+2. Initializing the application (loading data).
+3. Running the main application loop, which processes user menu choices until 
+   the user chooses to exit (6).
+"""
 def main():
+    """
+    The core loop for the Habit Tracker application.
+    """
     r = Reporter()
     r.welcome()
     while True:
